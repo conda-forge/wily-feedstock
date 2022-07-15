@@ -1,5 +1,5 @@
 {% set name = "wily" %}
-{% set version = "1.20.0" %}
+{% set version = "1.22.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c5c8633ff2d377a5eb30cf21fd337859374f893e9b807ba515a53d56a3384700
+  sha256: 0b78abeb264d1810a245e563964f1b5d9f380afae75fff032b4499cf300598be
 
 build:
   number: 0
@@ -50,7 +50,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'A command-line application for tracking, reporting on complexity of Python tests and applications.'
+  summary: A command-line application for tracking, reporting on complexity of Python tests and applications.
   description: |
     Wily uses git to go through each revision (commit) in a branch and run complexity
     and code-analysis metrics over the code. You can use this to limit your code or
