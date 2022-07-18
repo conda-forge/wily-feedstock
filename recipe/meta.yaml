@@ -13,8 +13,6 @@ build:
   number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-#  entry_points:
-#    - wily = wily:main
 
 requirements:
   host:
