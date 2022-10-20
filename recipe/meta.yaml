@@ -1,5 +1,5 @@
 {% set name = "wily" %}
-{% set version = "1.23.0" %}
+{% set version = "1.24.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cb40b28e37ff7cb710830ff33de7a1518b91aa2ca2f0a75fdf15cfc5f5fd9c6d
+  sha256: f302d94a98f96d0f696cfbdb30d8655f5833ee564976a45289d5d46d985e2cd3
 
 build:
   number: 0
