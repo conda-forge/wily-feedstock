@@ -1,11 +1,11 @@
-About wily
-==========
+About wily-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wily-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tonybaloney/wily
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wily-feedstock/blob/main/LICENSE.txt)
 
 Summary: A command-line application for tracking, reporting on complexity of Python tests and applications.
 
