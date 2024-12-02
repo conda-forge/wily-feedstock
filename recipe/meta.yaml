@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b63e85be5855aa3bfdd17db9b27475624539adc3bc1c8265805437ed5256a581
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip >=19.1
     - flit >=2.0
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - dataclasses
     - click >=7.0,<9.0
     - colorlog >=4.0.0,<5.0
@@ -38,6 +38,7 @@ test:
     - pytest
     - git
     - mock
+    - python {{ python_min }}
   source_files:
     - test/
   imports:
